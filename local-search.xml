@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>UV-Vis DRS</title>
+    <link href="/2022/09/10/UV-Vis%20DRS/"/>
+    <url>/2022/09/10/UV-Vis%20DRS/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Uv-Vis-Diffuse-Reflectance-Spectroscopy-（紫外可见光漫反射光谱）"><a href="#Uv-Vis-Diffuse-Reflectance-Spectroscopy-（紫外可见光漫反射光谱）" class="headerlink" title="Uv-Vis Diffuse Reflectance Spectroscopy （紫外可见光漫反射光谱）"></a>Uv-Vis Diffuse Reflectance Spectroscopy （紫外可见光漫反射光谱）</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><p>物质对光线的响应可分为两类：反射（Remission)和透射(Transmission)。Remission是物质对光产生的反射或背散射作用，transmission是则是光线穿过物质的过程。</p><p>物质在受到的光线照射后，其表面发生镜面散射或漫反射。漫反射过程中，物质对特定<br>波长的光线产生吸收特征。这种吸收特征关于波长连续化，得到漫反射光谱。在不同光谱区间，漫反射光谱能得到固体表面的不同特征。</p><h2 id="光谱的数学处理-1"><a href="#光谱的数学处理-1" class="headerlink" title="光谱的数学处理 [^1]"></a>光谱的数学处理 [^1]</h2><p>1862年，George Gabriel Stokes发表了基于层叠结构对反射和透射定量的公式。该公式将物质分为 n 层，每层对光线有特定的吸收 (a)，反射(r)和透射(t)分数，且三数和 $a+r+t&#x3D;1$ ，对于每一层，可表示为：${ A_n,R_n, T_n}$。对每层的参数通过以下公式计算：</p><p>$$<br>T_n&#x3D;\frac{\Omega-\frac{1}{\Omega}}{\Omega \Psi^n-\frac{1}{\Omega \Psi^n}}, \quad R_n&#x3D;\frac{\Psi^n-\frac{1}{\Psi^n}}{\Omega \Psi^n-\frac{1}{\Omega \Psi^n}}, \quad A_n&#x3D;1-T_n-R_n<br>$$<br>where<br>$$<br>\Omega&#x3D;\frac{1+r^2-t^2+\Delta}{2 r}, \quad \Psi&#x3D;\frac{1-r^2+t^2+\Delta}{2 t}<br>$$<br>and<br>$$<br>\Delta&#x3D;\sqrt{(1+r+t)(1+r-t)(1-r+t)(1-r-t)}<br>$$</p><p>未完待续<br>[^1]：Reference:<a href="https://en.wikipedia.org/wiki/Diffuse_reflectance_spectroscopy">https://en.wikipedia.org/wiki/Diffuse_reflectance_spectroscopy</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notebook</category>
+      
+      <category>Analytical Chemistry</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>UV-Vis</tag>
+      
+      <tag>Analytical Chemistry</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>（转）内心强大的6个表现</title>
     <link href="/2022/09/09/%E5%86%85%E5%BF%83%E5%BC%BA%E5%A4%A7%E7%9A%846%E4%B8%AA%E8%A1%A8%E7%8E%B0/"/>
     <url>/2022/09/09/%E5%86%85%E5%BF%83%E5%BC%BA%E5%A4%A7%E7%9A%846%E4%B8%AA%E8%A1%A8%E7%8E%B0/</url>
