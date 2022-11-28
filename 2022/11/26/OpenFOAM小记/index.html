@@ -18,29 +18,24 @@
   <meta name="author" content="W.C. Xie">
   <meta name="keywords" content="">
   
-    <meta name="description" content="今天看了一篇 Nature Review Cardiology，关于心脏瓣膜的组织工程，写的比较偏临床。现做个总结。 首先是心脏瓣膜置换的术式，这篇文章中介绍了两种：Surgical aortic valve replacement (SAVR) and transcatheter aortic valve replacement (TAVR). 目前，TAVR已经成为了一线治疗手段。TAVR也有">
+    <meta name="description" content="前言 说到CFD，之前用过COMSOL计算过血管内的剪切流，也计算过河道内的多相流。未来如果有需要，可能会经常涉及到计算心脏和大血管内的血流动力学、血管壁和血液的流固耦合。 关于人体内的物理场的计算与测量，其实很早就有想法。目前临床上的影像学手段，不外乎基于物质波的超声、基于电子束流的CT与基于电磁耦合的MRI。现在还有些原位的成像技术，像OCT，原位荧光。这些我不太懂，就不说了。 目前柔性电子">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity">
-<meta property="og:url" content="http://wc-xie.github.io/2022/11/25/[Review]%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair,%20remodelling%20and%20regeneration%20capacity/index.html">
+<meta property="og:title" content="OpenFOAM小记">
+<meta property="og:url" content="http://wc-xie.github.io/2022/11/26/OpenFOAM%E5%B0%8F%E8%AE%B0/index.html">
 <meta property="og:site_name" content="A Shepherd&#39;s Record">
-<meta property="og:description" content="今天看了一篇 Nature Review Cardiology，关于心脏瓣膜的组织工程，写的比较偏临床。现做个总结。 首先是心脏瓣膜置换的术式，这篇文章中介绍了两种：Surgical aortic valve replacement (SAVR) and transcatheter aortic valve replacement (TAVR). 目前，TAVR已经成为了一线治疗手段。TAVR也有">
+<meta property="og:description" content="前言 说到CFD，之前用过COMSOL计算过血管内的剪切流，也计算过河道内的多相流。未来如果有需要，可能会经常涉及到计算心脏和大血管内的血流动力学、血管壁和血液的流固耦合。 关于人体内的物理场的计算与测量，其实很早就有想法。目前临床上的影像学手段，不外乎基于物质波的超声、基于电子束流的CT与基于电磁耦合的MRI。现在还有些原位的成像技术，像OCT，原位荧光。这些我不太懂，就不说了。 目前柔性电子">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-b9811081f32824bfd240e0c326c1610e115ecc9ea9dd36dc387b43642821098e.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-5e031dcb9e68e99fa74d3b49d41568abaf5986c233cb26f88005eb6479ec27a3.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-8a020537c24ee2dde95f2943acaae87a18e1c2f053dbd85f8df666b7984f10b2.png">
-<meta property="article:published_time" content="2022-11-25T03:29:31.000Z">
-<meta property="article:modified_time" content="2022-11-27T09:04:08.077Z">
+<meta property="article:published_time" content="2022-11-25T22:56:04.000Z">
+<meta property="article:modified_time" content="2022-11-26T07:45:34.102Z">
 <meta property="article:author" content="W.C. Xie">
-<meta property="article:tag" content="Heart">
-<meta property="article:tag" content="Implantable Device">
+<meta property="article:tag" content="CFD">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-b9811081f32824bfd240e0c326c1610e115ecc9ea9dd36dc387b43642821098e.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity - A Shepherd&#39;s Record</title>
+  <title>OpenFOAM小记 - A Shepherd&#39;s Record</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -207,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity"></span>
+            <span id="subtitle" data-typed-text="OpenFOAM小记"></span>
           
         </div>
 
@@ -218,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-25 11:29" pubdate>
-          2022年11月25日 上午
+        <time datetime="2022-11-26 06:56" pubdate>
+          2022年11月26日 早上
         </time>
       </span>
     
@@ -230,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          832 字
         
       </span>
     
@@ -241,7 +236,7 @@
         
         
         
-          21 分钟
+          7 分钟
         
       </span>
     
@@ -287,92 +282,19 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity</h1>
+            <h1 style="display: none">OpenFOAM小记</h1>
             
             
               <div class="markdown-body">
                 
-                <p>今天看了一篇 Nature Review Cardiology，关于心脏瓣膜的组织工程，写的比较偏临床。现做个总结。</p>
-<p>首先是心脏瓣膜置换的术式，这篇文章中介绍了两种：Surgical aortic valve replacement (SAVR) and transcatheter aortic valve replacement (TAVR).</p>
-<p>目前，TAVR已经成为了一线治疗手段。TAVR也有几种入路：</p>
-<ul>
-<li>transapical routes</li>
-<li>transfemoral routes</li>
-<li>transaortic routes</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-b9811081f32824bfd240e0c326c1610e115ecc9ea9dd36dc387b43642821098e.png" srcset="/img/loading.gif" lazyload alt="图 1" /></p>
-<h2 id="瓣膜置换"><a class="markdownIt-Anchor" href="#瓣膜置换"></a> 瓣膜置换</h2>
-<p>瓣膜置换，从1952年起，经历了Mechanical valves, Homograft heart valves, Bioprosthetic valves, Autograft valves and Polymeric valves<br />
-分别讨论一下：</p>
-<h3 id="mechanical-valves"><a class="markdownIt-Anchor" href="#mechanical-valves"></a> Mechanical valves</h3>
-<p>机械瓣膜是最早的人工瓣膜，早期由于physiological valve geometry and foreign surface，导致thrombogenicity，因此需要病人终身服用抗凝药。</p>
-<h3 id="homograft-heart-valves"><a class="markdownIt-Anchor" href="#homograft-heart-valves"></a> Homograft heart valves</h3>
-<p>同种瓣膜移植在<strong>血液动力学</strong>，<strong>血栓风险</strong>和<strong>免疫原性</strong>上优于机械瓣膜</p>
-<p>然而，其自身特性决定了供体来源问题。同时，供体残余的免疫原性导致limited durability和early calcification。</p>
-<p>另外，人体瓣膜的消毒和储存问题也值得关注。freezing后再thaw会导致瓣膜表面损伤。<br />
-目前临床实践中，以下问题都被报道过：valve insufficiency, leaflet shortening and thickening, vegetation, inflammation, and valve degeneration</p>
-<h3 id="bioprosthetic-valves"><a class="markdownIt-Anchor" href="#bioprosthetic-valves"></a> Bioprosthetic valves</h3>
-<p>为了解决瓣膜短缺问题，戊二醛处理的xenogeneic material 瓣应运而生。</p>
-<p>这种瓣膜具有接近生理的geometry和血流动力学，并且不需要抗凝治疗，已经被开发出subannular/super-annular position, with/wo stent frames, suture less valves and valves with various anticalcification treatment 等多种亚型。<br />
-现在，通过TAVR，还有self-expandable and balloon-expandable valves投入使用。</p>
-<p>但这种瓣膜依然存在免疫原性的问题，并长期会导致钙化和瓣膜失效。</p>
-<h3 id="autograft-valves"><a class="markdownIt-Anchor" href="#autograft-valves"></a> Autograft valves</h3>
-<p>自体瓣膜，与其说是一种材料，不如说是一种术式：Ross procedure</p>
-<p>这种术式采用病人的肺动脉瓣替换病变的主动脉瓣，再将其他瓣膜（如Homograft valves)植入到肺动脉瓣的位置。</p>
-<p>这种瓣膜的一个显著性有点是具有regenerative and remodelling potential。患者生存期接近常人，是最有效的一种瓣膜置换方法。</p>
-<p>然而这种手术对术者要求较高。</p>
-<h3 id="polymeric-valves"><a class="markdownIt-Anchor" href="#polymeric-valves"></a> Polymeric valves</h3>
-<p>聚合物瓣膜诞生之初就与poor durability, a loss of functionality over time, variation between batches, thrombogenicity, pannus overgrowth, and calcification有关</p>
-<p>以下问题亟待解决：</p>
-<ul>
-<li>
-<p>balance the durability and biocompatibility of the material</p>
-</li>
-<li>
-<p>variability between the synthesis or processing of different polymer batches</p>
-</li>
-<li>
-<p>polymer wear should be prevented to limit the risk of tear and failure.</p>
-</li>
-</ul>
-<h3 id="clinical-issues"><a class="markdownIt-Anchor" href="#clinical-issues"></a> Clinical issues</h3>
-<ul>
-<li>
-<p>does not degenerate</p>
-</li>
-<li>
-<p>can adjust to functional and somatic changes</p>
-</li>
-<li>
-<p>can be implanted via minimally invasive techniques</p>
-</li>
-</ul>
-<h2 id="组织工程瓣膜"><a class="markdownIt-Anchor" href="#组织工程瓣膜"></a> 组织工程瓣膜</h2>
-<p>理想的瓣膜有以下几个需求：</p>
-<ol>
-<li>capacity to self-repair</li>
-<li>adaptively remodel</li>
-<li>no immunogenic</li>
-<li>grow and to be resistant to infections and thrombogenicity</li>
-</ol>
-<p>组织工程的瓣膜</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-5e031dcb9e68e99fa74d3b49d41568abaf5986c233cb26f88005eb6479ec27a3.png" srcset="/img/loading.gif" lazyload alt="图 2" /></p>
-<h3 id="原位组织工程策略"><a class="markdownIt-Anchor" href="#原位组织工程策略"></a> 原位组织工程策略</h3>
-<p>To confer immunocompatibility  to human-derived and animal-derived valvular tissues, homografts and xenografts are processed via decellularization</p>
-<h4 id="decellularized-homografts"><a class="markdownIt-Anchor" href="#decellularized-homografts"></a> Decellularized homografts</h4>
-<p>Cryopreservation and decellularization techniques</p>
-<p>Sterilization methods</p>
-<h5 id="issues"><a class="markdownIt-Anchor" href="#issues"></a> Issues</h5>
-<p>address the role of cryopreservation, decellularization and sterilization on ECM preservation to ensure long-term homograft stability and remodelling.</p>
-<h4 id="decellularized-xenografts"><a class="markdownIt-Anchor" href="#decellularized-xenografts"></a> Decellularized xenografts</h4>
-<h4 id="in-vitro-grown-tissue-engineered-matrices-tems"><a class="markdownIt-Anchor" href="#in-vitro-grown-tissue-engineered-matrices-tems"></a> in vitro-grown tissue-engineered matrices (TEMs)</h4>
-<h4 id="bioresorbable-polymers-with-regenerative-potential"><a class="markdownIt-Anchor" href="#bioresorbable-polymers-with-regenerative-potential"></a> Bioresorbable polymers with regenerative potential</h4>
-<h3 id="challenges"><a class="markdownIt-Anchor" href="#challenges"></a> Challenges</h3>
-<p>Immunocompatibility</p>
-<p>Haemocompatibility</p>
-<p>Regulation of in situ valve remodelling.</p>
-<p>Functional growth</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair%2C%20remodelling%20and%20regeneration%20capacity-8a020537c24ee2dde95f2943acaae87a18e1c2f053dbd85f8df666b7984f10b2.png" srcset="/img/loading.gif" lazyload alt="图 3" /></p>
+                <h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>说到CFD，之前用过COMSOL计算过血管内的剪切流，也计算过河道内的多相流。未来如果有需要，可能会经常涉及到计算心脏和大血管内的血流动力学、血管壁和血液的流固耦合。</p>
+<p>关于人体内的物理场的计算与测量，其实很早就有想法。目前临床上的影像学手段，不外乎基于物质波的超声、基于电子束流的CT与基于电磁耦合的MRI。现在还有些原位的成像技术，像OCT，原位荧光。这些我不太懂，就不说了。</p>
+<p>目前柔性电子做的比较多的还是基于传统场，包括机械、电流这一类。做的比较好的，像UC 的Sheng Xu老师做的超声，是很有临床价值的方向。这方面主要朝着传感小型化实现，本身没有太大的底层突破。然而对于我国目前的医疗市场，诊疗设备的可穿戴化其实价值有限。原因不外乎几点：1. 健康意识。即使是临床医生也不会花太多时间关注自己的健康情况，“有病就去看”是大多数人的日常观念。2. 检测范围有限。除了像超声这样的检测技术能在临床上大有作为外，对于电信号，肢体机械和运动信号的传感，没有太大的临床价值。3. 数据收集和分析不具有实用性。对于日理万机的临床医生，要对大量传感器收集的数据进行分析和解读，实在是强人所难。且考虑到临床诊断的特殊性，即使准确性再高，光靠后端的分析算法产生的结论很难被临床医生信任。</p>
+<p>因此，私以为传感领域，除了向小型化和多功能化方向发展外，面向疾病本身更加重要。一味的追求传统物理场参数的多样化对实用性贡献甚微，而临床疾病谱的多样性和疾病本身的多样性使得传感器的开发很难兼顾创新性和普适性。对于开发人员，这正是痛点所在。</p>
+<p>说远了，回到CFD。</p>
+<p>CFD有很多软件，包括COMSOL这种多物理场啥都能算（就是不喜欢收敛/doge)的，还有Ansys的Fluent， 我记得Dassult软件在solidworks 里也有类似的流体模块。</p>
+<p>然而这些软件虽然好用，普遍都要收费且价格不菲，对于学生和研究也不太友好。这才开始转战开源的OpenFOAM，后续Matlab也会起到一些作用，这里不展开了。</p>
 
                 
               </div>
@@ -391,20 +313,13 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Notebook/" class="category-chain-item">Notebook</a>
+  <a href="/categories/Numerical-Computation/" class="category-chain-item">Numerical Computation</a>
   
   
     <span>></span>
     
-  <a href="/categories/Notebook/Paper-Perusal/" class="category-chain-item">Paper Perusal</a>
+  <a href="/categories/Numerical-Computation/Computational-Fluid-Dynamics/" class="category-chain-item">Computational Fluid Dynamics</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/Notebook/Paper-Perusal/Cardiovascular/" class="category-chain-item">Cardiovascular</a>
-  
-  
-
   
 
   
@@ -420,9 +335,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Heart/">#Heart</a>
-      
-        <a href="/tags/Implantable-Device/">#Implantable Device</a>
+        <a href="/tags/CFD/">#CFD</a>
       
     </div>
   
@@ -434,8 +347,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity</div>
-      <div>http://wc-xie.github.io/2022/11/25/[Review] Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity/</div>
+      <div>OpenFOAM小记</div>
+      <div>http://wc-xie.github.io/2022/11/26/OpenFOAM小记/</div>
     </div>
     <div class="license-meta">
       
@@ -447,7 +360,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月25日</div>
+          <div>2022年11月26日</div>
         </div>
       
       
@@ -489,9 +402,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/26/OpenFOAM%E5%B0%8F%E8%AE%B0/" title="OpenFOAM小记">
+                      <a href="/2022/11/26/%E6%80%A5%E6%80%A7%E5%BF%83%E6%A2%97%E5%90%8E%E5%BF%83%E8%82%8C%E6%8D%9F%E4%BC%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E7%9A%84%E7%97%85%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%8E%E5%85%B3%E9%94%AE%E6%B2%BB%E7%96%97%E5%9B%A0%E7%B4%A0/" title="急性心梗后心肌损伤与修复的病理过程与关键治疗因素">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">OpenFOAM小记</span>
+                        <span class="hidden-mobile">急性心梗后心肌损伤与修复的病理过程与关键治疗因素</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -499,8 +412,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/25/%E9%99%8D%E7%BB%B4%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/" title="降维的几种方法">
-                        <span class="hidden-mobile">降维的几种方法</span>
+                      <a href="/2022/11/25/%5BReview%5D%20Next-generation%20tissue-engineered%20heart%20valves%20with%20repair,%20remodelling%20and%20regeneration%20capacity/" title="(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity">
+                        <span class="hidden-mobile">(Review) Next-generation tissue-engineered heart valves with repair, remodelling and regeneration capacity</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
