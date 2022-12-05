@@ -4,6 +4,85 @@
   
   
   <entry>
+    <title>放射学术语</title>
+    <link href="/2022/12/05/%E6%94%BE%E5%B0%84%E5%AD%A6%E6%9C%AF%E8%AF%AD/"/>
+    <url>/2022/12/05/%E6%94%BE%E5%B0%84%E5%AD%A6%E6%9C%AF%E8%AF%AD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-放射学术语定义"><a class="markdownIt-Anchor" href="#1-放射学术语定义"></a> 1. 放射学术语定义</h2><h3 id="11-物质中释放的动能kinetic-energy-released-in-matter-kerma"><a class="markdownIt-Anchor" href="#11-物质中释放的动能kinetic-energy-released-in-matter-kerma"></a> 1.1. 物质中释放的动能(Kinetic Energy Released in Matter, kerma)</h3><p>这是X射线束在小体积物质（如空气、软组织）中每单位质量的特定材料所释放的能量。对于组织中的X射线，这在数值上相当于吸收剂量。一Gy相当于每公斤物质的一焦耳（J）的能量。对于空气中的X射线，kerma比吸收剂量要高一些，因为一些释放的能量会以电子动能的形式被带出小的试验容积，不会对局部剂量产生影响。</p><p>数学定义为：</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><mtext>d</mtext><msub><mi>E</mi><mrow><mi>t</mi><mi>r</mi></mrow></msub></mrow><mrow><mtext>d</mtext><mi>m</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">K = \frac{\textrm{d} E_{tr}}{\textrm{d} m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord textrm">d</span></span><span class="mord mathdefault">m</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord textrm">d</span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p><h3 id="12-air-kerma"><a class="markdownIt-Anchor" href="#12-air-kerma"></a> 1.2. Air kerma</h3><p>Air kerma是指在一个小的辐照空气体积中的kerma。大多数介入设备会以毫戈瑞（mGy）以及kerma面积积（KAP）来报告空气kerma。空气kerma用于描述X射线束的强度，并取代了旧的射线束强度单位伦琴（R）。病人入口处的照射现在被报告为空气kerma值，并表示在病人不在场的情况下测量的值，以消除由于病人的后向散射而产生的影响。综合KAP/空气kerma仪报告的数值是空间中某个特定点的空气kerma值，通常称为介入参考点（IRP）。机器报告的空气kerma值没有考虑到光束的重新定位或工作台的衰减，因此往往会高估病人皮肤上的入口空气kerma（EAK）。</p><h3 id="13-absorbed-dose-吸收剂量"><a class="markdownIt-Anchor" href="#13-absorbed-dose-吸收剂量"></a> 1.3. Absorbed Dose （吸收剂量）</h3><p>吸收剂量是指在某一特定点上，每单位质量的被照射物质所吸收的电离辐射能量。这是考虑生物效应时的相关量。请注意，吸收剂量并不考虑电离辐射的类型或受辐射组织的辐射敏感性。重要的是要注意，吸收剂量是一个点的测量。一个很好的比喻是温度，它反映了一个材料的单位质量的局部能量。典型的情况是，在一个手术过程中，被照射的组织区域的吸收剂量值会有变化。这是由于光束的重新定位、与X射线焦点的不同距离、导致X射线管电压和电流变化的病人厚度以及其他影响。</p><h3 id="14-equivalent-dose-等效剂量"><a class="markdownIt-Anchor" href="#14-equivalent-dose-等效剂量"></a> 1.4. Equivalent Dose （等效剂量）</h3><p>不同类型的辐射，如X射线、质子、中子和α粒子，每单位吸收的剂量造成不同程度的生物损害。为了考虑到这一点，可以根据辐射类型使用一个加权系数。根据定义，X射线的加权系数为1。由于X射线通过在组织中释放高能电子造成生物损害，电子的辐射加权系数也为1。</p><h3 id="15-有效剂量-effective-dose-ed"><a class="markdownIt-Anchor" href="#15-有效剂量-effective-dose-ed"></a> 1.5. 有效剂量 (Effective Dose, ED)</h3><p>不同的组织有不同程度的辐射敏感度。例如，乳腺、骨髓和结肠比骨面、大脑和皮肤的辐射敏感度高得多。从数学上讲，ED是这些组织的等效剂量与组织权重因子的乘积在受照射组织上的总和。单位是Sv。对于X射线，如果我们能产生均匀的全身吸收剂量1 Gy，根据定义，这将导致ED为1 Sv。</p><p>我们可以把ED看作是以Sv为单位的货币，这样我们就可以比较利用电离辐射的各种类型的研究的相对随机损害。值得注意的是，组织加权系数是基于人口年龄和性别的平均数，这对个人风险的差异有很大的贡献。还有其他的个人风险因素也不完全了解。因此，ED不应该被用来回顾性地确定个体风险。</p><h3 id="16-入口皮肤剂量entrance-skin-dose-esd"><a class="markdownIt-Anchor" href="#16-入口皮肤剂量entrance-skin-dose-esd"></a> 1.6. 入口皮肤剂量（Entrance Skin Dose, ESD）</h3><p>ESD是皮肤吸收的剂量。这个值一般不能准确报告，但如果知道EAK，则可以估计。为了尽可能准确，EAK要乘以一个系数，以考虑到空气与软组织由于成分不同而吸收的能量略有不同。对于介入治疗机使用的光束能量来说，这个系数约为1.07。更重要的问题是病人体内会产生大量的背向散射，从而增加皮肤剂量。这种增加可以是1.3到1.4的系数。背向散射系数不包括在介入单位报告的参考值中，根据笔者的经验，一般会被忽略。</p><h2 id="2-辐射剂量估算"><a class="markdownIt-Anchor" href="#2-辐射剂量估算"></a> 2. 辐射剂量估算</h2><h3 id="21-荧光镜时间"><a class="markdownIt-Anchor" href="#21-荧光镜时间"></a> 2.1. 荧光镜时间</h3><p>这是在手术过程中使用透视的时间长度。它是用来估计剂量或风险的最没用的指标，因为它没有考虑到透视的帧率、准直、几何或光束强度，而且它不包括任何透视成像（&quot;点 &quot;图像和数字减影血管造影）。</p><h3 id="22-kerma-面积积-kerma-area-product-kap"><a class="markdownIt-Anchor" href="#22-kerma-面积积-kerma-area-product-kap"></a> 2.2. Kerma-面积积 (Kerma-Area Product, KAP)</h3><p>KAP也可称为剂量面积积（DAP）。KAP或DAP是辐射束强度（Air Kerma）乘以辐射束面积的乘积，是衡量向病人提供的辐射总量的适当方式。在考虑随机风险时，它是最相关的指标，但不表示皮肤反应的可能性。最近的出版物可能将KAP缩写为PKA。</p><p>KAP是在离辐射源很近的地方用KAP计测量的（图1）。测量仪比光束略大，以捕获整个光束。KAP的测量单位是Gy 乘 厘米的平方（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>y</mi><mo>⋅</mo><mi>c</mi><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Gy \cdot cm^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>），但也可能报告为这个单位的一些变化，如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>μ</mi><mi>G</mi><mi>y</mi><mo>⋅</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mu Gy \cdot m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>。操作者应检查他们的设备，看KAP是如何报告的，并熟悉如何快速转换为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>y</mi><mo>⋅</mo><mi>c</mi><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Gy \cdot cm^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>，因为文献中通常使用这个单位。<br />值得注意的是，KAP不会沿着X射线光束的路径发生变化，因为空气中的角膜会根据反平方定律而减少，而光束的面积也会随着与源头的距离增加而增加。换句话说，光束离开源头时的KAP与光束进入病人之前的KAP是一样的。</p><h3 id="23-参考空气kermaksubarsub"><a class="markdownIt-Anchor" href="#23-参考空气kermaksubarsub"></a> 2.3. 参考空气kerma（K<sub>a,r</sub>）</h3><p>在空间的一个固定点测量的空气kerma被称为介入参考点（IRP）。K<sub>a,r</sub> 只是皮肤剂量的一个粗略的近似值；然而，如前所述，它不等同于皮肤剂量。IRP可能对应于皮肤水平、病人体内的一个点或病人体外的一个点。此外，K<sub>a,r</sub>不包括光束的重新定位、反向散射或桌面的衰减。K<sub>a,r</sub>也被称为累积剂量1和参考点的空气角膜。</p><h3 id="24-介入参考点irp"><a class="markdownIt-Anchor" href="#24-介入参考点irp"></a> 2.4. 介入参考点(IRP)</h3><p>对于等中心透视系统，IRP是沿中央X射线束的空间点，从等中心向X射线管后方15厘米处。这是报告K<sub>a,r</sub>的点。由于病人体型、操作者高度和C型臂角度的变化，IRP并不精确地对应于皮肤表面。值得注意的是，在IRP处没有设置测量仪。相反，空气kerma是在靠近光束中心的光源处测量的。然后，使用反平方律，计算出IRP的值并显示出来。</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%E6%94%BE%E5%B0%84%E5%AD%A6%E6%9C%AF%E8%AF%AD-bd0a9930dcd47ca4162091888d8cb657d72f3a67b4b53c0140b5d5604897ac62.png" alt="图 1" /></p><h2 id="3-风险"><a class="markdownIt-Anchor" href="#3-风险"></a> 3. 风险</h2><h3 id="31-确定性效应"><a class="markdownIt-Anchor" href="#31-确定性效应"></a> 3.1. 确定性效应</h3><p>确定性效应是指由辐射引起的有害影响，在这种情况下，除非达到一定的阈值，否则不会看到影响。然而，一旦超过了阈值，伤害的严重程度就会随着剂量的增加而增加。晒伤是一个合理的比喻，要牢记在心，皮肤损伤和脱发是确定性影响的典型例子。剂量越高，皮肤损伤就越严重。</p><h3 id="32-随机效应"><a class="markdownIt-Anchor" href="#32-随机效应"></a> 3.2. 随机效应</h3><p>随机效应发生的概率随着剂量的增加而增加；但是，效应的严重程度并没有增加。癌症和遗传性影响在本质上是随机的。换句话说，癌症发生的概率随着剂量的增加而增加，但癌症的严重程度却没有增加。这里的假设是，即使是很低的剂量也有一定的风险。5,8 通常提到的模型是 “线性无阈值模型”–这个话题是有争议的，因为确实存在挑战这一假设的其他模型。</p><h2 id="4-其他"><a class="markdownIt-Anchor" href="#4-其他"></a> 4. 其他</h2><h3 id="41-源头到皮肤的距离ssd"><a class="markdownIt-Anchor" href="#41-源头到皮肤的距离ssd"></a> 4.1. 源头到皮肤的距离(SSD)</h3><p>SSD是指从辐射源到病人皮肤的距离。这部分是由操作者的身高决定的，这可能会影响桌子的高度。由于反平方定律，这个距离的微小变化会显著影响病人的剂量。</p><h3 id="42-源头到图像的距离sid"><a class="markdownIt-Anchor" href="#42-源头到图像的距离sid"></a> 4.2. 源头到图像的距离(SID)</h3><p>SID是指从辐射源到图像接受器/平板探测器的距离。一般来说，通过使图像接受器靠近病人（从而减少所谓的 &quot;空气间隙 &quot;以及SID），病人的剂量将减少。</p><h3 id="43-散射"><a class="markdownIt-Anchor" href="#43-散射"></a> 4.3. 散射</h3><p>在病人体内产生的散射辐射是人员受到辐射的主要来源。一个简单的经验法则是，距离光束入口点1米处的散射辐射约为入口点的1/1000，或0.1%。</p><h3 id="44-铅当量厚度"><a class="markdownIt-Anchor" href="#44-铅当量厚度"></a> 4.4. 铅当量厚度</h3><p>辐射防护罩和服装的设计是为了减弱大部分入射的辐射。这与铅对X射线的衰减能力有关，被称为铅当量厚度。铅当量为0.5毫米的材料对X射线的衰减程度与0.5毫米的铅相同。4 标准被认为是0.5毫米的铅当量，尽管有更轻的材料，但衰减能力几乎没有减少。</p><h3 id="45-阈值剂量"><a class="markdownIt-Anchor" href="#45-阈值剂量"></a> 4.5. 阈值剂量</h3><p>阈值剂量是指可能发生特定确定性损伤的最小剂量。1 由于生物学上的差异，这一阈值因人而异，也因组织类型而异。1,5 值得记住的数字是PSD为2 Gy（2,000 mGy），因为这是短暂性皮肤红斑的大致阈值，以及5 Gy（5,000 mGy），这是建议病人随访的Ka,r值。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notebook</category>
+      
+      <category>Material</category>
+      
+      <category>Characteristic</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Close-Loop in Bioelectronic</title>
+    <link href="/2022/12/02/Close-Loop%20in%20Bioelectronic/"/>
+    <url>/2022/12/02/Close-Loop%20in%20Bioelectronic/</url>
+    
+    <content type="html"><![CDATA[<p>近日鲍哲南老师在NBT上发表了一篇关于创面闭环治疗的文章，引起了我的关注。我心想，不如建立一个文件，把与闭环医用电子系统相关的经典文献汇总与此。</p><h1 id="1-wireless-closed-loop-smart-bandage-with-integrated-sensors-and-stimulators-for-advanced-wound-care-and-accelerated-healing"><a class="markdownIt-Anchor" href="#1-wireless-closed-loop-smart-bandage-with-integrated-sensors-and-stimulators-for-advanced-wound-care-and-accelerated-healing"></a> 1. Wireless, closed-loop, smart bandage with integrated sensors and stimulators for advanced wound care and accelerated healing</h1><p>发表时间：2022-11-24<br />发表期刊：Nature Biotechnology<br />关键词：</p><h2 id="11-pointed-issues"><a class="markdownIt-Anchor" href="#11-pointed-issues"></a> 1.1. Pointed Issues</h2><h2 id="12-solution"><a class="markdownIt-Anchor" href="#12-solution"></a> 1.2. Solution</h2><h3 id="121-wireless-circuit"><a class="markdownIt-Anchor" href="#121-wireless-circuit"></a> 1.2.1. Wireless circuit</h3><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-60973f5647dea1982d6a07649f6ddd2e25e47bfa6cb830bda828a8aee3d98ba2.png" alt="图 6" /></p><h3 id="122-hydrogel-interface"><a class="markdownIt-Anchor" href="#122-hydrogel-interface"></a> 1.2.2. Hydrogel interface</h3><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-549b5fcafa97f4dfea5a660daa22ff631317afdc35c927ed981e574f411ed5a0.png" alt="图 7" /></p><h2 id="13-results-and-discussion"><a class="markdownIt-Anchor" href="#13-results-and-discussion"></a> 1.3. Results and Discussion</h2><h2 id="14-advances-techniques"><a class="markdownIt-Anchor" href="#14-advances-techniques"></a> 1.4. Advances Techniques</h2><ul><li>single-cell RNA sequencing (scRNA-seq)</li></ul><h1 id="2-wireless-fully-implantable-cardiac-stimulation-and-recording-with-on-device-computation-for-closed-loop-pacing-and-defibrillation"><a class="markdownIt-Anchor" href="#2-wireless-fully-implantable-cardiac-stimulation-and-recording-with-on-device-computation-for-closed-loop-pacing-and-defibrillation"></a> 2. Wireless, fully implantable cardiac stimulation and recording with on-device computation for closed-loop pacing and defibrillation</h1><p>发表时间：2022-10-28<br />发表期刊：Science Advances<br />关键词：</p><h2 id="21-pointed-issues"><a class="markdownIt-Anchor" href="#21-pointed-issues"></a> 2.1. Pointed Issues</h2><h2 id="22-solution"><a class="markdownIt-Anchor" href="#22-solution"></a> 2.2. Solution</h2><h2 id="23-results-and-discussion"><a class="markdownIt-Anchor" href="#23-results-and-discussion"></a> 2.3. Results and Discussion</h2><h2 id="24-advances-techniques"><a class="markdownIt-Anchor" href="#24-advances-techniques"></a> 2.4. Advances Techniques</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notebook</category>
+      
+      <category>Paperperusal</category>
+      
+      <category>Bioelectronic</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Bioelectronic</tag>
+      
+      <tag>Close-Loop</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Sequencing and Omics - An Introduction</title>
+    <link href="/2022/12/02/Sequencing%20and%20Omics%20-%20An%20Introduction/"/>
+    <url>/2022/12/02/Sequencing%20and%20Omics%20-%20An%20Introduction/</url>
+    
+    <content type="html"><![CDATA[<p>今天来讲一讲几个有趣的主题：测序，组学与系统生物学</p><h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2><h2 id="测序"><a class="markdownIt-Anchor" href="#测序"></a> 测序</h2><h3 id="基因测序"><a class="markdownIt-Anchor" href="#基因测序"></a> 基因测序</h3><h3 id="rna测序"><a class="markdownIt-Anchor" href="#rna测序"></a> RNA测序</h3><h3 id="蛋白质测序"><a class="markdownIt-Anchor" href="#蛋白质测序"></a> 蛋白质测序</h3><h2 id="组学"><a class="markdownIt-Anchor" href="#组学"></a> 组学</h2><h3 id="基因组"><a class="markdownIt-Anchor" href="#基因组"></a> 基因组</h3><h3 id="转录组"><a class="markdownIt-Anchor" href="#转录组"></a> 转录组</h3><h3 id="蛋白组"><a class="markdownIt-Anchor" href="#蛋白组"></a> 蛋白组</h3><h3 id="代谢组"><a class="markdownIt-Anchor" href="#代谢组"></a> 代谢组</h3><h2 id="系统生物学"><a class="markdownIt-Anchor" href="#系统生物学"></a> 系统生物学</h2><h3 id="单细胞测序"><a class="markdownIt-Anchor" href="#单细胞测序"></a> 单细胞测序</h3><h3 id="泛癌"><a class="markdownIt-Anchor" href="#泛癌"></a> 泛癌</h3>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Bioinformatics</tag>
+      
+      <tag>Biotechnique</tag>
+      
+      <tag>Molecular Biology</tag>
+      
+      <tag>Systemic Biology</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>N-S 方程推导</title>
     <link href="/2022/11/29/N-S%20%E6%96%B9%E7%A8%8B%E6%8E%A8%E5%AF%BC/"/>
     <url>/2022/11/29/N-S%20%E6%96%B9%E7%A8%8B%E6%8E%A8%E5%AF%BC/</url>
@@ -352,25 +431,6 @@
       <category>Notebook</category>
       
       <category>Analytical Chemistry</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>改文章破防</title>
-    <link href="/2022/09/30/%E6%94%B9%E6%96%87%E7%AB%A0%E7%A0%B4%E9%98%B2/"/>
-    <url>/2022/09/30/%E6%94%B9%E6%96%87%E7%AB%A0%E7%A0%B4%E9%98%B2/</url>
-    
-    <content type="html"><![CDATA[<h2 id="改文章破大防"><a class="markdownIt-Anchor" href="#改文章破大防"></a> 改文章破大防</h2><p>今天改文章，又破防了。</p><p>已经数不清是多少次改光电了。各种修修补补，早就已经耗竭了精力和热情。现在改，已全然是靠着剩下的责任心在苟延残喘。</p><p>计算化学届的Sob大神说过一句很有名的一句话：老板只要不捣乱就是好老板。改着改着想起这句话，不能不认同。</p><p>内行指导外行，已然是常有之事了。少见多怪，甚是魔幻。此时，倒是有人在背后作怪了。无论他意图如何，这模样，倒不像个当甩手掌柜的，像个贼。</p><p>骂归骂，做归做。</p><p>现在负面情绪大，前有狼后有虎，活生生的动物园。你和他们讲学术，他们听不懂。你和他们讲道德，他们不想听。他们只喜欢听好听的。有些人越长越大，倒像个小朋友，喜欢吃糖、画饼，越来越幼稚、愚蠢了。</p><p>希望以后慢慢锤炼，少点破防，少点“开心”。有一天心梗躺在叶主任的手术台上，太丢脸咯。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Causerie</category>
       
     </categories>
     

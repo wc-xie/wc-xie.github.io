@@ -18,23 +18,27 @@
   <meta name="author" content="W.C. Xie">
   <meta name="keywords" content="">
   
-    <meta name="description" content="ROS清除率测定的Protocol  1. Introduction 这几年生物材料、纳米医学的工作很火，尤其是所谓ROS related medicine更是泥沙俱下，鱼龙混杂。且不说ROS清除的应用如何，鉴定体系中自由基的含量以及评估自由基淬灭效率，在有机、光化学等方向的机理研究还是一个相当基础的表征。现写此文归纳一下，如有不全（大概率是写不全的，这么多常用的自由基反应）勿怪。 一下是我自己">
+    <meta name="description" content="今天来讲一讲几个有趣的主题：测序，组学与系统生物学  Introduction  测序  基因测序  RNA测序  蛋白质测序  组学  基因组  转录组  蛋白组  代谢组  系统生物学  单细胞测序  泛癌">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ROS 清除率测定的几种方法">
-<meta property="og:url" content="http://wc-xie.github.io/2022/10/05/ROS%20%E6%B8%85%E9%99%A4%E7%8E%87%E6%B5%8B%E5%AE%9A%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="Sequencing and Omics - An Introduction">
+<meta property="og:url" content="http://wc-xie.github.io/2022/12/02/Sequencing%20and%20Omics%20-%20An%20Introduction/index.html">
 <meta property="og:site_name" content="A Shepherd&#39;s Record">
-<meta property="og:description" content="ROS清除率测定的Protocol  1. Introduction 这几年生物材料、纳米医学的工作很火，尤其是所谓ROS related medicine更是泥沙俱下，鱼龙混杂。且不说ROS清除的应用如何，鉴定体系中自由基的含量以及评估自由基淬灭效率，在有机、光化学等方向的机理研究还是一个相当基础的表征。现写此文归纳一下，如有不全（大概率是写不全的，这么多常用的自由基反应）勿怪。 一下是我自己">
+<meta property="og:description" content="今天来讲一讲几个有趣的主题：测序，组学与系统生物学  Introduction  测序  基因测序  RNA测序  蛋白质测序  组学  基因组  转录组  蛋白组  代谢组  系统生物学  单细胞测序  泛癌">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-10-04T21:45:13.000Z">
-<meta property="article:modified_time" content="2022-10-05T09:31:03.000Z">
+<meta property="article:published_time" content="2022-12-02T10:19:34.000Z">
+<meta property="article:modified_time" content="2022-12-02T18:26:09.066Z">
 <meta property="article:author" content="W.C. Xie">
+<meta property="article:tag" content="Bioinformatics">
+<meta property="article:tag" content="Biotechnique">
+<meta property="article:tag" content="Molecular Biology">
+<meta property="article:tag" content="Systemic Biology">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>ROS 清除率测定的几种方法 - A Shepherd&#39;s Record</title>
+  <title>Sequencing and Omics - An Introduction - A Shepherd&#39;s Record</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="ROS 清除率测定的几种方法"></span>
+            <span id="subtitle" data-typed-text="Sequencing and Omics - An Introduction"></span>
           
         </div>
 
@@ -212,8 +216,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-05 05:45" pubdate>
-          2022年10月5日 凌晨
+        <time datetime="2022-12-02 18:19" pubdate>
+          2022年12月2日 晚上
         </time>
       </span>
     
@@ -224,7 +228,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          267 字
+          79 字
         
       </span>
     
@@ -235,7 +239,7 @@
         
         
         
-          3 分钟
+          1 分钟
         
       </span>
     
@@ -281,21 +285,25 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">ROS 清除率测定的几种方法</h1>
+            <h1 style="display: none">Sequencing and Omics - An Introduction</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="ros清除率测定的protocol"><a class="markdownIt-Anchor" href="#ros清除率测定的protocol"></a> ROS清除率测定的Protocol</h1>
-<h2 id="1-introduction"><a class="markdownIt-Anchor" href="#1-introduction"></a> 1. Introduction</h2>
-<p>这几年生物材料、纳米医学的工作很火，尤其是所谓ROS related medicine更是泥沙俱下，鱼龙混杂。且不说ROS清除的应用如何，鉴定体系中自由基的含量以及评估自由基淬灭效率，在有机、光化学等方向的机理研究还是一个相当基础的表征。现写此文归纳一下，如有不全（大概率是写不全的，这么多常用的自由基反应）勿怪。</p>
-<p>一下是我自己归纳的类型，后续有时间了查阅文献慢慢补充。</p>
-<h2 id="2-自由基引发淬灭"><a class="markdownIt-Anchor" href="#2-自由基引发淬灭"></a> 2. 自由基引发——淬灭</h2>
-<h3 id="21-dpph"><a class="markdownIt-Anchor" href="#21-dpph"></a> 2.1 DPPH</h3>
-<h4 id="机理"><a class="markdownIt-Anchor" href="#机理"></a> 机理</h4>
-<h4 id="protocol"><a class="markdownIt-Anchor" href="#protocol"></a> Protocol</h4>
-<h2 id="3-自由基引发定量淬灭"><a class="markdownIt-Anchor" href="#3-自由基引发定量淬灭"></a> 3. 自由基引发——定量——淬灭</h2>
-<h3 id="31-hsub2subosub2sub-含量测定"><a class="markdownIt-Anchor" href="#31-hsub2subosub2sub-含量测定"></a> 3.1 H<sub>2</sub>O<sub>2</sub> 含量测定</h3>
+                <p>今天来讲一讲几个有趣的主题：测序，组学与系统生物学</p>
+<h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
+<h2 id="测序"><a class="markdownIt-Anchor" href="#测序"></a> 测序</h2>
+<h3 id="基因测序"><a class="markdownIt-Anchor" href="#基因测序"></a> 基因测序</h3>
+<h3 id="rna测序"><a class="markdownIt-Anchor" href="#rna测序"></a> RNA测序</h3>
+<h3 id="蛋白质测序"><a class="markdownIt-Anchor" href="#蛋白质测序"></a> 蛋白质测序</h3>
+<h2 id="组学"><a class="markdownIt-Anchor" href="#组学"></a> 组学</h2>
+<h3 id="基因组"><a class="markdownIt-Anchor" href="#基因组"></a> 基因组</h3>
+<h3 id="转录组"><a class="markdownIt-Anchor" href="#转录组"></a> 转录组</h3>
+<h3 id="蛋白组"><a class="markdownIt-Anchor" href="#蛋白组"></a> 蛋白组</h3>
+<h3 id="代谢组"><a class="markdownIt-Anchor" href="#代谢组"></a> 代谢组</h3>
+<h2 id="系统生物学"><a class="markdownIt-Anchor" href="#系统生物学"></a> 系统生物学</h2>
+<h3 id="单细胞测序"><a class="markdownIt-Anchor" href="#单细胞测序"></a> 单细胞测序</h3>
+<h3 id="泛癌"><a class="markdownIt-Anchor" href="#泛癌"></a> 泛癌</h3>
 
                 
               </div>
@@ -304,34 +312,19 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
       
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Notebook/" class="category-chain-item">Notebook</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Notebook/Analytical-Chemistry/" class="category-chain-item">Analytical Chemistry</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
+        <a href="/tags/Bioinformatics/">#Bioinformatics</a>
+      
+        <a href="/tags/Biotechnique/">#Biotechnique</a>
+      
+        <a href="/tags/Molecular-Biology/">#Molecular Biology</a>
+      
+        <a href="/tags/Systemic-Biology/">#Systemic Biology</a>
+      
     </div>
-  
   
 </div>
 
@@ -341,8 +334,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ROS 清除率测定的几种方法</div>
-      <div>http://wc-xie.github.io/2022/10/05/ROS 清除率测定的几种方法/</div>
+      <div>Sequencing and Omics - An Introduction</div>
+      <div>http://wc-xie.github.io/2022/12/02/Sequencing and Omics - An Introduction/</div>
     </div>
     <div class="license-meta">
       
@@ -354,7 +347,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年10月5日</div>
+          <div>2022年12月2日</div>
         </div>
       
       
@@ -396,9 +389,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/12/%E5%BF%83%E5%AE%A4%E8%BE%85%E5%8A%A9%E8%A3%85%E7%BD%AE/" title="心室辅助装置">
+                      <a href="/2022/12/02/Close-Loop%20in%20Bioelectronic/" title="Close-Loop in Bioelectronic">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">心室辅助装置</span>
+                        <span class="hidden-mobile">Close-Loop in Bioelectronic</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -406,8 +399,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/29/%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF%E5%BC%80%E5%A7%8B/" title="博士生涯开始">
-                        <span class="hidden-mobile">博士生涯开始</span>
+                      <a href="/2022/11/29/N-S%20%E6%96%B9%E7%A8%8B%E6%8E%A8%E5%AF%BC/" title="N-S 方程推导">
+                        <span class="hidden-mobile">N-S 方程推导</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
