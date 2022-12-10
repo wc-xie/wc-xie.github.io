@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-60973f5647dea1982d6a07649f6ddd2e25e47bfa6cb830bda828a8aee3d98ba2.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-549b5fcafa97f4dfea5a660daa22ff631317afdc35c927ed981e574f411ed5a0.png">
 <meta property="article:published_time" content="2022-12-02T10:26:56.000Z">
-<meta property="article:modified_time" content="2022-12-02T18:40:41.475Z">
+<meta property="article:modified_time" content="2022-12-10T10:37:40.240Z">
 <meta property="article:author" content="W.C. Xie">
 <meta property="article:tag" content="Bioelectronic">
 <meta property="article:tag" content="Close-Loop">
@@ -229,7 +229,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          612 字
+          3.1k 字
         
       </span>
     
@@ -240,7 +240,7 @@
         
         
         
-          6 分钟
+          26 分钟
         
       </span>
     
@@ -297,16 +297,80 @@
 发表期刊：Nature Biotechnology<br />
 关键词：</p>
 <h2 id="11-pointed-issues"><a class="markdownIt-Anchor" href="#11-pointed-issues"></a> 1.1. Pointed Issues</h2>
+<ul>
+<li>Incorporate sensing and electrical stimulation technologies</li>
+<li>random mechanical movement produce uncertainties on stimulation and sensing</li>
+</ul>
+<p>Aim of development</p>
+<ul>
+<li>flexible and wirelessly</li>
+<li>integrate sensing and stimulation</li>
+<li>on-demand skin adhesion with easy detachment for signal transduction and energy delivery</li>
+</ul>
 <h2 id="12-solution"><a class="markdownIt-Anchor" href="#12-solution"></a> 1.2. Solution</h2>
 <h3 id="121-wireless-circuit"><a class="markdownIt-Anchor" href="#121-wireless-circuit"></a> 1.2.1. Wireless circuit</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-60973f5647dea1982d6a07649f6ddd2e25e47bfa6cb830bda828a8aee3d98ba2.png" srcset="/img/loading.gif" lazyload alt="图 6" /></p>
+<ul>
+<li>an energy-harvesting antenna</li>
+<li>a microcontroller unit</li>
+<li>a crystal oscillator and filter circuits for dual-channel continuous sensing of wound impedance and temperature</li>
+<li>parallel stimulation circuit to deliver programmed electrical cues for accelerated wound healing</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-60973f5647dea1982d6a07649f6ddd2e25e47bfa6cb830bda828a8aee3d98ba2.png" srcset="/img/loading.gif" lazyload alt="图 1" /></p>
 <h3 id="122-hydrogel-interface"><a class="markdownIt-Anchor" href="#122-hydrogel-interface"></a> 1.2.2. Hydrogel interface</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-549b5fcafa97f4dfea5a660daa22ff631317afdc35c927ed981e574f411ed5a0.png" srcset="/img/loading.gif" lazyload alt="图 7" /></p>
+<ul>
+<li>ionically and electrically conducting</li>
+<li>thermally controlled peeling off via heat phase transition mechanism</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/Close-Loop%20in%20Bioelectronic-549b5fcafa97f4dfea5a660daa22ff631317afdc35c927ed981e574f411ed5a0.png" srcset="/img/loading.gif" lazyload alt="图 2" /></p>
 <h2 id="13-results-and-discussion"><a class="markdownIt-Anchor" href="#13-results-and-discussion"></a> 1.3. Results and Discussion</h2>
+<h3 id="131-电路设计"><a class="markdownIt-Anchor" href="#131-电路设计"></a> 1.3.1. 电路设计</h3>
+<h4 id="通过阻抗传感器和热传感器获取创面感染和炎症信息"><a class="markdownIt-Anchor" href="#通过阻抗传感器和热传感器获取创面感染和炎症信息"></a> 通过阻抗传感器和热传感器获取创面感染和炎症信息</h4>
+<p>热传感通过RF430FRL152H内部的电路进行传感</p>
+<p>阻抗响应先后通过：oscillator发生32.768kHz，分别通过创面和内部标准阻抗元件后，经过高通滤波器滤波，在envelope dector转直流，最后在ADC0转换。</p>
+<p>文章在这里还放了一个ADC校准</p>
+<blockquote>
+<p>这里其实有几个问题，1. 为何不使用芯片内部的分频器进行分频；2. 固定的频率（32.768kHz）是否能得到足够的创面阻抗信息</p>
+</blockquote>
+<h3 id="132-水凝胶界面"><a class="markdownIt-Anchor" href="#132-水凝胶界面"></a> 1.3.2 水凝胶界面</h3>
+<p>由于PEDOT：PSS存在colloidal aqueous suspension, 在离子和碱性条件下发生聚沉，因此开发了一种通过hydrogen peroxide 和 ascorbic acid进行homogeneous gelation的方式</p>
+<blockquote>
+<p>这里关于电化学阻抗的讨论可以学习一下：Compared with the pristine poly(NIPAM-ran-AAm) gel, the incorporation of PEDOT:PSS substantially reduced interfacial impedance when in contact with phosphate buffered saline (PBS), **with a ~0° phase angle across the entire frequency range **(Fig. 3c and Supplementary Fig. 8), <strong>corresponding to a resistive nature for the contact due to the high capacitance at the low frequency range for PEDOT:PSS</strong>35. Similarly, when a voltage pulse was applied, the PEDOT:PSS gel showed substantially <strong>enhanced charge injection capacity when compared with the control sample</strong> (Fig. 3d and Supplementary Fig. 9), which ensures efficient delivery of stimulus from the electronically conducting circuits to ionically conducting tissues. The low impedance and high charge injection of the hydrogel electrode can be well maintained even after 10,000 cycles of repetitive charge injections</p>
+</blockquote>
+<p>力学表征<br />
+有空详细看看Xuanhe Zhao关于水凝胶力学的讨论</p>
+<p>这里使用了unidirectional tensile test, reversible impedance changes (力学-电学关联)，</p>
+<p>lower critical solution temperature (LCST) transition: NIPAM的amphiphilic NIPAM units在热力条件下aggregation</p>
+<p>hydrophilic monomers 调节LCST points，通过differential scanning calorimetry(DSC)和rheological measurements表征</p>
+<p>值得注意的是，还和3M的医用胶带进行了比较</p>
+<h3 id="132-动物实验"><a class="markdownIt-Anchor" href="#132-动物实验"></a> 1.3.2 动物实验</h3>
+<p>基本验证：动物行为学（不会干扰动物运动），生物相容性</p>
+<p>观测指标：</p>
+<ul>
+<li>wound closure duration,</li>
+<li>wound impedance,</li>
+<li>tensile recovery（这个似乎是直接用万能试验机进行测量）</li>
+<li>HE/Masson (dermal thickness, collagen deposion and dermal appendage count)，collagen fiber heterogeneity</li>
+<li>通过天狼星红胶原染色和Curve Align, CT-Fire and MatFiber三种标记算法进行分析</li>
+<li>neovascularization (CD31, α-SMA), microvessel count</li>
+</ul>
 <h2 id="14-advances-techniques"><a class="markdownIt-Anchor" href="#14-advances-techniques"></a> 1.4. Advances Techniques</h2>
 <ul>
-<li>single-cell RNA sequencing (scRNA-seq)</li>
+<li>
+<p>parabiosis（异种共生）实验用于研究circulating cells</p>
+<p>本篇工作研究了长期电刺激对循环细胞的影响</p>
+</li>
+<li>
+<p>single-cell RNA sequencing (scRNA-seq)</p>
+<ul>
+<li>Trajectories of cells<br />
+本文利用单细胞测序追踪的方式观察了细胞对电流响应的机理（CytoTRACE)</li>
+<li>RNA velocity analysis</li>
+<li>流形分析（之前说的降维方法）</li>
+<li>Pseudotime analysis</li>
 </ul>
+</li>
+</ul>
+<p>具体过程看原文 Page 6,包括大量生物信息学分析</p>
 <h1 id="2-wireless-fully-implantable-cardiac-stimulation-and-recording-with-on-device-computation-for-closed-loop-pacing-and-defibrillation"><a class="markdownIt-Anchor" href="#2-wireless-fully-implantable-cardiac-stimulation-and-recording-with-on-device-computation-for-closed-loop-pacing-and-defibrillation"></a> 2. Wireless, fully implantable cardiac stimulation and recording with on-device computation for closed-loop pacing and defibrillation</h1>
 <p>发表时间：2022-10-28<br />
 发表期刊：Science Advances<br />
