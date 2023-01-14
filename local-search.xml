@@ -4,6 +4,73 @@
   
   
   <entry>
+    <title>富集分析综述</title>
+    <link href="/2023/01/14/%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E7%BB%BC%E8%BF%B0/"/>
+    <url>/2023/01/14/%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E7%BB%BC%E8%BF%B0/</url>
+    
+    <content type="html"><![CDATA[<p>今天学习了一下富集分析，现附上一篇2016年的综述</p><div class="row">    <embed src="/pdf/Progress" width="100%" height="550" type="application/pdf"></div>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Bioinformatics</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>20230105 深空观测Planning 与小记</title>
+    <link href="/2023/01/05/20230105%20%E6%B7%B1%E7%A9%BA%E8%A7%82%E6%B5%8BPlanning%20%E4%B8%8E%E5%B0%8F%E8%AE%B0/"/>
+    <url>/2023/01/05/20230105%20%E6%B7%B1%E7%A9%BA%E8%A7%82%E6%B5%8BPlanning%20%E4%B8%8E%E5%B0%8F%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="今夜观测计划"><a class="markdownIt-Anchor" href="#今夜观测计划"></a> 今夜观测计划</h2><p>全程不使用双窄带滤镜。</p><p>今天尝试使用远程观测的方式进行，拍摄过程不再有人值守。</p><p>逐渐开始意识到深空摄影中信噪比的重要性，一定要长时间积累曝光才能引起质变。</p><p>对于亮星云，如M42（星等为4），一个小时的曝光即可引起质变。然而，对于星等6以上的暗弱星云，10余小时的曝光才能获得较好的信噪比</p><h3 id="观测目标"><a class="markdownIt-Anchor" href="#观测目标"></a> 观测目标</h3><p>上半夜</p><ul><li>M45<br />观测开始-22：00</li></ul><p>下半夜</p><ul><li><p>C50<br />22：00-2：00</p></li><li><p>马卡良星系群巡天计划<br />今晚观测目标：NGC4436<br />2：00-天亮</p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Photograph</category>
+      
+      <category>Deep Sky</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Photograph</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2023年上半年1-6月工作计划</title>
+    <link href="/2022/12/26/2023%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B41-6%E6%9C%88%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    <url>/2022/12/26/2023%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B41-6%E6%9C%88%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
+    
+    <content type="html"><![CDATA[<h2 id="2023年上半年1-6月工作计划"><a class="markdownIt-Anchor" href="#2023年上半年1-6月工作计划"></a> 2023年上半年1-6月工作计划</h2><p>2022年已经进入尾声，几天后将会开始写今年的年终总结。</p><p>虽然偶然事件总是起决定性作用，但大方向依旧不容易更改。有很多事情一直堆积着，或者规划着没有去做的，计划在本科结束前完成，迎接未来5年的学习。</p><h3 id="工程学板块"><a class="markdownIt-Anchor" href="#工程学板块"></a> 工程学板块</h3><ol><li>计算化学与分子动力学</li><li>人工智能与深度神经网络</li><li>FPGA、数电和模电基础</li></ol><h3 id="理化板块"><a class="markdownIt-Anchor" href="#理化板块"></a> 理化板块</h3><ol><li>有机化学与合成生物学</li></ol><h3 id="生物医学板块"><a class="markdownIt-Anchor" href="#生物医学板块"></a> 生物医学板块</h3><ol><li>医学基础<br />尤其是：生理学，病理学，生物化学，病理生理学，内科学，外科学</li><li>生物信息学学习<br />生物信息学是一直想学习的一项技能，尤其是单细胞数据的分析</li></ol><h3 id="计划任务板块"><a class="markdownIt-Anchor" href="#计划任务板块"></a> 计划任务板块</h3><ol><li>综述攥写</li><li>科研任务</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Causerie</category>
+      
+      <category>Tasks</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>20221224深空拍摄小记</title>
     <link href="/2022/12/24/20221224%E6%B7%B1%E7%A9%BA%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0/"/>
     <url>/2022/12/24/20221224%E6%B7%B1%E7%A9%BA%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0/</url>
@@ -35,7 +102,7 @@
     <link href="/2022/12/15/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0/"/>
     <url>/2022/12/15/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[<p>今夜拍摄了M42，IC434（马头星云）和昴星团（M45）</p><p>M42拍摄条件为Bin 1, 90 s X 45 n</p><p>IC434 拍摄条件为：Bin 2, 300 s X 8 n</p><p>昴星团的云细节不容易曝光，没有成功</p><p>原图如下：</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0-56407de09bd15d1f16046d642c0b2fb1f4c580c119a3abd3f11799f4ae162b14.jpeg" alt="图 1. M42" /></p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0-380a095d560995c04af5777209dc5144ec66bbcabc72c88d097175506cfb2afa.jpeg" alt="图 2. IC434" /></p><p>卫星轨迹在画面中非常常见，由于拍摄正值双子座流星雨极大值期，不排除下图流星轨迹的可能：</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0-913d9f3dd9c86d16cf4b46cb095d0b0706863ea2b95f2d4314ed451d15509533.png" alt="图 3. M42 with trace" /></p><p>计划拍摄对象</p><ul><li>[ ] 昴星团 M45</li><li>[ ] M31</li><li>[ ] M33</li><li>[ ] M1</li><li>[ ] 狮子座三重星云 M65</li><li>[ ] 心脏星云 IC1805</li><li>[ ] M31</li><li>[ ] NGC2244</li><li>[ ] NGC7000</li><li>[ ] M27 (哑铃星云)</li><li>[ ] NGC6992（东面纱星云）</li><li>[ ] NGC2264</li></ul><h2 id="20221223-拍摄队列"><a class="markdownIt-Anchor" href="#20221223-拍摄队列"></a> 20221223 拍摄队列</h2><ul><li><p>[ 1 ] NGC6992<br />19：00-20：00</p></li><li><p>[ 2 ] IC1805 心脏星云<br />20:00-22:00</p></li><li><p>[ 2 ] NGC7380<br />20:00-22:00</p></li><li><p>[ 3 ] M31 x 2<br />21:30-23:00</p></li><li><p>[ 4 ] 昴星团 M45<br />23:00-0:00</p></li><li><p>[ 5 ] (M 81), Cigar Galaxy (M 82) and NGC 3077</p></li><li><p>[ 5 ] IC2177<br />0:00-2:00</p></li><li><p>[ 6 ] 狮子座三重星云 M65<br />2:00-4:00</p></li><li></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>今夜拍摄了M42，IC434（马头星云）和昴星团（M45）</p><p>M42拍摄条件为Bin 1, 90 s X 45 n</p><p>IC434 拍摄条件为：Bin 2, 300 s X 8 n</p><p>昴星团的云细节不容易曝光，没有成功</p><p>原图如下：</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0-56407de09bd15d1f16046d642c0b2fb1f4c580c119a3abd3f11799f4ae162b14.jpeg" alt="图 1. M42" /></p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0-380a095d560995c04af5777209dc5144ec66bbcabc72c88d097175506cfb2afa.jpeg" alt="图 2. IC434" /></p><p>卫星轨迹在画面中非常常见，由于拍摄正值双子座流星雨极大值期，不排除下图流星轨迹的可能：</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/20221214%E6%B7%B1%E7%A9%BA%E6%91%84%E5%BD%B1%E6%8B%8D%E6%91%84%E5%B0%8F%E8%AE%B0-913d9f3dd9c86d16cf4b46cb095d0b0706863ea2b95f2d4314ed451d15509533.png" alt="图 3. M42 with trace" /></p><p>计划拍摄对象</p><ul><li>[ ] 昴星团 M45</li><li>[ ] M31</li><li>[ ] M33</li><li>[ ] M1</li><li>[ ] 狮子座三重星云 M65</li><li>[ ] 心脏星云 IC1805</li><li>[ ] M31</li><li>[ ] NGC2244</li><li>[ ] NGC7000</li><li>[ ] M27 (哑铃星云)</li><li>[ ] NGC6992（东面纱星云）</li><li>[ ] NGC2264</li></ul><h2 id="20221223-拍摄队列"><a class="markdownIt-Anchor" href="#20221223-拍摄队列"></a> 20221223 拍摄队列</h2><ul><li>[ 1 ] NGC6992 |<br />19：00-20：00</li></ul><hr /><ul><li>[ 2 ] IC1805 心脏星云 |<br />20:00-22:00</li><li>[ 2 ] NGC7380 |<br />20:00-22:00</li></ul><hr /><ul><li>[ 3 ] M31 x 2 |<br />21:30-23:00</li><li>[ 4 ] 昴星团 M45 |<br />23:00-0:00</li></ul><hr /><ul><li>[ 5 ] IC2177 |<br />0:00-2:00</li></ul><hr /><ul><li><p>[ 6 ] 狮子座三重星云 M65 |<br />2:00-4:00 As long as you can</p></li><li><p>[ 5 ] (M 81), Cigar Galaxy (M 82) and NGC 3077</p></li></ul>]]></content>
     
     
     <categories>
