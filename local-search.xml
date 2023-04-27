@@ -4,11 +4,74 @@
   
   
   <entry>
+    <title>模拟仿真过程中的注意事项</title>
+    <link href="/2023/04/27/%E6%A8%A1%E6%8B%9F%E4%BB%BF%E7%9C%9F%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <url>/2023/04/27/%E6%A8%A1%E6%8B%9F%E4%BB%BF%E7%9C%9F%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    
+    <content type="html"><![CDATA[<p>引自：<a href="https://mp.weixin.qq.com/s/s9uurCZRyNBhsi4K_8YHBg">https://mp.weixin.qq.com/s/s9uurCZRyNBhsi4K_8YHBg</a></p><h2 id="1-不要为了仿真而仿真"><a class="markdownIt-Anchor" href="#1-不要为了仿真而仿真"></a> 1. 不要为了仿真而仿真</h2><p>个人的观点：仿真只是研究手段之一，确认适合了再使用。</p><p>有一些论文连仿真的目的都不明确，通篇都不知道在做什么，这个算一下，那个也算一下，最后迷失在一堆花花绿绿的图片中。</p><p>而且还发现了一个现象：这些年做仿真的似乎越来越多了。一些看题目就适合做实验研究的，结果打开一看大量篇幅使用的仿真。</p><h2 id="2-明确输入数据"><a class="markdownIt-Anchor" href="#2-明确输入数据"></a> 2. 明确输入数据</h2><p>对于任何仿真计算，以下信息非常重要：</p><ol><li><p>基本假设。看仿真类的论文，第一步通常看假设，假设能够在一定程度上反映论文是否具有创新性。假设太多基本上水平就不会太高了，假设太少的论文，要么水平很高，要么弄虚作假。完全没有写假设的论文，要么问题没有研究的价值，要么就是作者忘了写了。</p></li><li><p>物理模型。论文中使用的物理模型要交代清楚，尤其是模型中一些与实际问题比较相关的不确定性参数的指定。就好比这次审阅的一篇写空化的文章，作者通篇都没有写饱和压力相关的内容，这么重要的参数居然都不写，都不知道该说什么了。</p></li><li><p>边界条件。这个的重要性就不用说了吧。边界条件没有的话，计算结果可以认为全是无效的。</p></li><li><p>初始条件。在瞬态计算中，初始条件的重要性与边界条件相同。</p></li></ol><p>这些其实都是仿真计算的输入参数，一般在文档中都要明确地指出。除了需要明确指出这些参数之外，可能还需要对这些数据的有效性及可靠性进行验证。</p><h2 id="3-对结果进行验证"><a class="markdownIt-Anchor" href="#3-对结果进行验证"></a> 3. 对结果进行验证</h2><p>在仿真计算中，常常需要进行验证。但这里也有很多的问题。</p><p>仿真验证分两类：</p><ol><li><p>模型验证。主要目的是验证所使用的模型是否合适，可以使用试验数据或文献数据。</p></li><li><p>结果验证。一般用于验证仿真计算的结果。</p></li></ol><p>虽然似乎大家都知道要进行验证，但在实际的验证过程中存在一些问题，主要表现在：</p><ul><li><p>验证模型不一致。在验证的过程中，试验参数与仿真输入参数不完全一致。事实上也没办法保证完全一致，但验证者似乎并没有意识到试验和仿真不可能完全一致的问题，在文档中拼了老命地想去证明仿真的结果与试验数据的一致性。</p></li><li><p>模型转换的问题。验证的时候使用的模型与后续的模型不一致，这问题常出现在利用文献中的数据进行模型验证的时候。一般情况下需要对模型的不一致带来的影响进行评估。</p></li></ul><h2 id="4-网络独立性验证"><a class="markdownIt-Anchor" href="#4-网络独立性验证"></a> 4. 网络独立性验证</h2><p>审阅的那么多学位论文中，似乎每一篇都做了网格独立性验证。不得不感叹，网格独立性验证什么时候变得这么廉价了。</p><p>这里面有很多的问题。</p><p>大多数人只是给出了网格数量，并未给出实际的网格分布。然后随便找个物理量，随便画个曲线图，就说验证了网格独立性。有时候总觉得那图中的数据似乎是编造的。甚至发现一篇论文里面用大涡模拟的，居然用几十万网格就能做到网格独立性，有点儿神奇。</p><p>网格独立性验证其实挺难的，尤其是对于工业中的复杂几何模型。网格独立性验证通常需要找到流场敏感区域，对敏感区域进行网格加密，去观察网格加密对特定物理量的影响。网格数量的变化幅度通常很大，但一般需要在文档中展示出网格加密区域以及加密程度，而不是仅仅给出个网格数量。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>临床预后模型初探</title>
+    <link href="/2023/02/25/%E4%B8%B4%E5%BA%8A%E9%A2%84%E5%90%8E%E6%A8%A1%E5%9E%8B%E5%88%9D%E6%8E%A2/"/>
+    <url>/2023/02/25/%E4%B8%B4%E5%BA%8A%E9%A2%84%E5%90%8E%E6%A8%A1%E5%9E%8B%E5%88%9D%E6%8E%A2/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Notebook</category>
+      
+      <category>Clinical</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Clinical Study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>深部组织传感的文献阅读</title>
+    <link href="/2023/02/03/%E6%B7%B1%E9%83%A8%E7%BB%84%E7%BB%87%E4%BC%A0%E6%84%9F%E7%9A%84%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+    <url>/2023/02/03/%E6%B7%B1%E9%83%A8%E7%BB%84%E7%BB%87%E4%BC%A0%E6%84%9F%E7%9A%84%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</url>
+    
+    <content type="html"><![CDATA[<h1 id="0-预备知识"><a class="markdownIt-Anchor" href="#0-预备知识"></a> 0. 预备知识</h1><p>超声成像系统组成：</p><ul><li>transducer</li><li>scanning method</li><li>scan conversion technique</li></ul><p>评价指标：</p><ul><li>spatial resolution</li><li>contrast resolution</li><li>temporal resolution</li><li>sigal-to-noise ratio</li></ul><h2 id="transducer-and-arrays"><a class="markdownIt-Anchor" href="#transducer-and-arrays"></a> Transducer and Arrays</h2><h4 id="material"><a class="markdownIt-Anchor" href="#material"></a> Material</h4><p>Parameter: ECC (Electrical-to-mechanical coupling coefficient)</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>C</mi><mi>C</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>t</mi><mi>o</mi><mi>r</mi><mi>e</mi><mi>d</mi><mi>m</mi><mi>e</mi><mi>c</mi><mi>h</mi><mi>a</mi><mi>n</mi><mi>i</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>e</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi><mi>t</mi><mi>o</mi><mi>r</mi><mi>e</mi><mi>d</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>g</mi><mi>y</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">ECC = \frac{stored mechanical eergy}{total stored energy}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714399999999998em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="mord mathdefault">o</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">i</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p><p>lead zironate titanate and polyvinylidene fluoride</p><h4 id="structure"><a class="markdownIt-Anchor" href="#structure"></a> Structure</h4><ul><li>Single element<br />no beamforming</li><li>multielement<ul><li>annular array</li><li>linear phased array</li><li>curved linear array</li><li>2D array</li></ul></li></ul><h2 id="signal-process"><a class="markdownIt-Anchor" href="#signal-process"></a> Signal Process</h2><h1 id="1-a-wearable-cardiac-ultrasound-imager"><a class="markdownIt-Anchor" href="#1-a-wearable-cardiac-ultrasound-imager"></a> 1. A wearable cardiac ultrasound imager</h1><p>发表时间：2023-2-3<br />发表期刊：Nature<br />关键词：Ultrasound imaging, piezoelectric transducer arrays</p><h2 id="11-pointed-issues"><a class="markdownIt-Anchor" href="#11-pointed-issues"></a> 1.1. Pointed Issues</h2><ul><li></li><li></li></ul><h2 id="22-solution"><a class="markdownIt-Anchor" href="#22-solution"></a> 2.2. Solution</h2><ul><li>device design and material fabrication that improve the mechanical coupling between the device and human skin</li><li>deep learning model that automatically extracts the left ventricular volume from the continuous image recording</li></ul><h3 id="device-structure"><a class="markdownIt-Anchor" href="#device-structure"></a> Device Structure</h3><h4 id="componement"><a class="markdownIt-Anchor" href="#componement"></a> Componement</h4><ul><li>piezoelectric transducer arrays<ul><li>orthogonal configuration</li><li>consisted of <strong>anisotropic 1-3 piezoelectric composite</strong> and a silver-epoxy-based backing layer</li></ul></li><li>liquid metal composite electrodes</li><li>triblock copolymer encapsulation</li><li>styrene–ethylenebutylene–styrene (SEBS)</li></ul><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/%E6%B7%B1%E9%83%A8%E7%BB%84%E7%BB%87%E4%BC%A0%E6%84%9F%E7%9A%84%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB-ff8e92729a5da0c7b78ad91b92ebb524390c2c8c6676ec019b741f84c03b0501.png" alt="图 1" /></p><h2 id="23-results-and-discussion"><a class="markdownIt-Anchor" href="#23-results-and-discussion"></a> 2.3. Results and Discussion</h2><h3 id="system-evaluation"><a class="markdownIt-Anchor" href="#system-evaluation"></a> System Evaluation</h3><p>metrics: spatial resolutions, signal-to-noise ratio and location accuracies, dynamic range and contrast-to-noise-ratio</p><h4 id="transmit-beamforming-strategy-for-image"><a class="markdownIt-Anchor" href="#transmit-beamforming-strategy-for-image"></a> transmit beamforming strategy for image</h4><p>plane-wave, monofocus and wide-beam compounding</p><p>wide-beam has the best quality</p><p>receive beamforming</p><h2 id="24-advances-techniques"><a class="markdownIt-Anchor" href="#24-advances-techniques"></a> 2.4. Advances Techniques</h2><h1 id="2-continuous-monitoring-of-deep-tissue-haemodynamics-with-stretchable-ultrasonic-phased-arrays"><a class="markdownIt-Anchor" href="#2-continuous-monitoring-of-deep-tissue-haemodynamics-with-stretchable-ultrasonic-phased-arrays"></a> 2. Continuous monitoring of deep-tissue haemodynamics with stretchable ultrasonic phased arrays</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notebook</category>
+      
+      <category>Paperperusal</category>
+      
+      <category>Bioelectronic and Biosensing</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2023年1月24日观测日志</title>
     <link href="/2023/01/25/2023%E5%B9%B41%E6%9C%8824%E6%97%A5%E8%A7%82%E6%B5%8B%E6%97%A5%E5%BF%97/"/>
     <url>/2023/01/25/2023%E5%B9%B41%E6%9C%8824%E6%97%A5%E8%A7%82%E6%B5%8B%E6%97%A5%E5%BF%97/</url>
     
-    <content type="html"><![CDATA[<h2 id="20230124-拍摄队列"><a class="markdownIt-Anchor" href="#20230124-拍摄队列"></a> 2023/01/24 拍摄队列</h2><h3 id="1-m51-螺旋星系"><a class="markdownIt-Anchor" href="#1-m51-螺旋星系"></a> 1. M51 螺旋星系</h3><p>拍摄开始时间：24日0时，曝光时间5小时</p><p>曝光发现低空视宁度奇差，高度角大约到35度以上后视宁度逐渐好转。</p><p>清晨指向晨光进行平场，效果较好，平场后没有出现之前出现的红色斑块。但注意到晨光平场有些不均匀，后续平场时应选择高度角更高的区域（光度平整），并调整曝光时间（不限于0.01s），使得直方图处于左侧（$$\frac{1}{3}$$至$$\frac{1}{2}$$处。</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/2023%E5%B9%B41%E6%9C%8824%E6%97%A5%E8%A7%82%E6%B5%8B%E6%97%A5%E5%BF%97-58c50ac95d612f49eca493b143a500e9f9ddb1df28e3c569f90ab891c050d3eb.png" alt="图 1" /></p><h3 id="2-m10疏散星团"><a class="markdownIt-Anchor" href="#2-m10疏散星团"></a> 2. M10疏散星团</h3><p>星团曝光时间约只有2小时左右，但在对星团的数据处理当中，意识到之前图片均未作饱和度处理，使得星点颜色单一。并学会了使用Dirzzle Integration.</p><p>除此之外，应当注意工作流程，先进行 Background neutralization, 再进行 Color Calibration.</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="20230124-拍摄队列"><a class="markdownIt-Anchor" href="#20230124-拍摄队列"></a> 2023/01/24 拍摄队列</h2><h3 id="1-m51-螺旋星系"><a class="markdownIt-Anchor" href="#1-m51-螺旋星系"></a> 1. M51 螺旋星系</h3><p>拍摄开始时间：24日0时，曝光时间5小时</p><p>曝光发现低空视宁度奇差，高度角大约到35度以上后视宁度逐渐好转。</p><p>清晨指向晨光进行平场，效果较好，平场后没有出现之前出现的红色斑块。但注意到晨光平场有些不均匀，后续平场时应选择高度角更高的区域（光度平整），并调整曝光时间（不限于0.01s），使得直方图处于左侧（$$\frac{1}{3}$$至$$\frac{1}{2}$$处。</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/2023%E5%B9%B41%E6%9C%8824%E6%97%A5%E8%A7%82%E6%B5%8B%E6%97%A5%E5%BF%97-58c50ac95d612f49eca493b143a500e9f9ddb1df28e3c569f90ab891c050d3eb.png" alt="图 1" /></p><h3 id="2-m10疏散星团"><a class="markdownIt-Anchor" href="#2-m10疏散星团"></a> 2. M10疏散星团</h3><p>星团曝光时间约只有2小时左右，但在对星团的数据处理当中，意识到之前图片均未作饱和度处理，使得星点颜色单一。并学会了使用Dirzzle Integration.</p><p>除此之外，应当注意工作流程，先进行 Background neutralization, 再进行 Color Calibration.</p><p><img src="https://cdn.jsdelivr.net/gh/wc-xie/blog-image/2023%E5%B9%B41%E6%9C%8824%E6%97%A5%E8%A7%82%E6%B5%8B%E6%97%A5%E5%BF%97-93dfc169db1a22a30159287e28a134419bb9d225a518f3856820d820ce065dc4.jpg" alt="图 3" /></p>]]></content>
     
     
     <categories>
@@ -269,7 +332,7 @@
       
       <category>Paperperusal</category>
       
-      <category>Bioelectronic</category>
+      <category>Bioelectronic and Biosensing</category>
       
     </categories>
     
