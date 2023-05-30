@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>May 30 Dialog</title>
+    <link href="/2023/05/30/2023%20May%2030/"/>
+    <url>/2023/05/30/2023%20May%2030/</url>
+    
+    <content type="html"><![CDATA[<p>好久不见。</p><p>今早发现徐升老师发表了工作“A fully integrated wearable ultrasound system to monitor deep tissues in moving subjects&quot;，实现了一直以来的完全集成动态超声监测的构想。在我的认知范围里，这是当前技术条件下可穿戴超声的尽头。</p><p>在阅读的过程中，瞥见了一篇“On-skin biosensors for noninvasive monitoring of postoperative free flaps and replanted digits”的工作，由华中科技大学同济医院头颈外科完成。这篇文章的技术特点倒不鲜明，只是利用了血氧模块监测组织含氧，封装在一个PDMS里。突出点在于，<strong>做了人体实验</strong>。</p><p>此时，一种无力感油然而生。</p><p>临床，电子，材料，计算机，生物……我不得不一个人整合所有技术，走上只有一个人的道路。有时候，面对上级，还不得不进行技术上的妥协。</p><p>老万说，“你得找到能力与你相匹配的人，否则只有你一个人在做，对内与所有人为敌，对外，即使技术再先进，也无法超越紧密合作的团队“。</p><p>不说了，继续学TEE了。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>模拟仿真过程中的注意事项</title>
     <link href="/2023/04/27/%E6%A8%A1%E6%8B%9F%E4%BB%BF%E7%9C%9F%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
     <url>/2023/04/27/%E6%A8%A1%E6%8B%9F%E4%BB%BF%E7%9C%9F%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
